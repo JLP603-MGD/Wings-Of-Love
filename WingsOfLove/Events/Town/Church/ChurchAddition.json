@@ -1,0 +1,58 @@
+{
+    "name": "Pray to the Goddess Statue.",
+    "CardType": "Addition",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [ ""],
+    "Speakers": [
+                  {
+                    "name": "",
+                    "postName": "",
+                    "SpeakerType": ""
+                  }
+                ],
+    "EventText": [
+                      {
+                        "NameOfScene": "Donate.",
+                        "theScene": [ "DonateToGoddess",
+                                    "AddTributeToProgress",
+                                    "JumpToRandomScene",
+                                      "WingsOfLove",
+                                      "PrayingMenu",
+                                      "PrayingMenu",
+                                    "EndLoop"
+                                  ]
+                    },
+                    {
+                      "NameOfScene": "PrayingMenuActual",
+                      "theScene": [
+                                  "MenuAddition",
+                                  "RequiresItem", "HolyCharm","HideOptionOnRequirementFail", "Contact Remiel",
+                                  "RequiresItem", "HolyCharm","HideOptionOnRequirementFail", "Think of Remiel",
+                                  "EndLoop"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "Think of Remiel",
+                      "theScene": [
+                                    "JumpToEventThenScene", "SkyCage", "PrivilegedAccess"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "Contact Remiel",
+                      "theScene": [
+                                    "JumpToEventThenScene", "SkyCage", "TelepathicPhoneSex"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "WingsOfLove",
+                      "theScene": [ "JumpToEvent", "SkyCage"
+                                ]
+                  },
+                  {
+                    "NameOfScene": "Event Broke",
+                    "theScene": [ "Oops, something went wrong! Please contact and ping JLP603 on the MGD discord in order to get this fixed."
+                              ]
+                }
+                ]
+}

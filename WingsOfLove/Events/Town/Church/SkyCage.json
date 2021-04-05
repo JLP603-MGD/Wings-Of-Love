@@ -1,0 +1,171 @@
+{
+    "name": "Pray to the Goddess Statue.",
+    "CardType": "Addition",
+    "CardLimit": "0",
+    "Description": "",
+    "requires": [ ""],
+    "Speakers": [
+                  {
+                    "name": "Remiel",
+                    "postName": "",
+                    "SpeakerType": "Monster"
+                  }
+                ],
+    "EventText": [
+                    {
+                      "NameOfScene": "EventStart",
+                      "theScene": [  
+                                  "IfChoice","1","DonationAccessOver","DonationAccessOver",
+                                  "IfChoice","2","Visited","VisitedNoAccessIntro",
+                                  "GetEventAndIfChoiceIs", "Pray to the Goddess Statue.", "5", "ShopUnlocked", "FirstNoAccessIntro",
+                                  "JumpToScene","DonationAccessOver"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "FirstNoAccessIntro",
+                      "theScene": [  
+                                "ChangeBG","fancyGolden.png",
+                                "Beamed up in golden light",
+                                "IfTimeIs", "Morning", "HeavenDay",
+                                "IfTimeIs", "Noon", "HeavenNoon",
+                                "IfTimeIs", "Night", "HeavenNight"
+
+                                ]
+                    },
+                    {
+                      "NameOfScene": "VisitedNoAccessIntro",
+                      "theScene": [
+                                "IfHasItem", "Sigil Of Allure","VisitedNoAccessIntroDefeatedDungeon",
+                                "JumpToScene","DonationAccessOver"  
+                                ]
+                    },
+                    {
+                      "NameOfScene": "VisitedNoAccessIntroDefeatedDungeon",
+                      "theScene": [
+                                 
+                                "ChangeBG","fancyGolden.png",
+                                "Beamed up in golden light",
+                                "IfTimeIs", "Morning", "HeavenDay",
+                                "IfTimeIs", "Noon", "HeavenNoon",
+                                "IfTimeIs", "Night", "HeavenNight"
+
+                                ]
+                    },
+                    {
+                      "NameOfScene": "PrivilegedAccess",
+                      "theScene": [  
+                                "ChangeBG","fancyGolden.png",
+                                "Beamed up in golden light",
+                                "IfTimeIs", "Morning", "HeavenDay",
+                                "IfTimeIs", "Noon", "HeavenNoon",
+                                "IfTimeIs", "Night", "HeavenNight"
+
+                                ]
+                    },
+                    {
+                      "NameOfScene": "HeavenDay",
+                      "theScene": [  
+                                  "ChangeBG", "../Mods/WingsOfLove/Images/Heaven_Sky_Morning.png",
+                                  "IfChoice","1","","FirstNoAccessIntroCont",
+                                  "IfChoice","2","Visited","VisitedNoAccessIntroCont",
+                                  "JumpToScene","PrivilegedAccessCont"
+
+                                ]
+                    },
+                    {
+                      "NameOfScene": "HeavenNoon",
+                      "theScene": [  
+                                  "ChangeBG", "../Mods/WingsOfLove/Images/Heaven_Sky_Noon.png",
+                                  "IfChoice","1","","FirstNoAccessIntroCont",
+                                  "IfChoice","2","Visited","VisitedNoAccessIntroCont",
+                                  "JumpToScene","PrivilegedAccessCont"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "HeavenNight",
+                      "theScene": [  
+                                  "ChangeBG", "../Mods/WingsOfLove/Images/Heaven_Sky_Night.png",
+                                  "IfChoice","1","","FirstNoAccessIntroCont",
+                                  "IfChoice","2","Visited","VisitedNoAccessIntroCont",
+                                  "JumpToScene","PrivilegedAccessCont"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "FirstNoAccessIntroCont",
+                      "theScene": [    
+                                  "Describe sky scenery lower heavens birds flying birdcage platforms with steps along with a huge pile of eros.am angel asks how you got there kindly offers to keep you compant  tell her of your woes like being in dwbt she sympathizes sje offers to comfort you in embrace huming warmth spreads and then you suddenly tell jer you dont want to leave but she says you jave to.u ak to fight she doenst know how.You ask to fight hwe mayb activating recall stone to semd you home? You blish realizing wjat you jist said but surprisingly she gives you the ok hand holding halohob. all about the intent then think holding hands and kissing is enough",                      
+                                  "DisplayCharacters",
+                                  "1",
+                                  "EndLoop",
+                                  "Speak", "???",
+                                  "Hmm hmm♪ Ah! W-who are you?",
+
+                                  "SetChoice","3","SecondVisit",
+                                  "SetChoice","2","Visited",
+                                  "GameOver"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "SecondOverallNoAccessVisit",
+                      "theScene": [    
+                                  "Describe sky scenery then see her she sends you back while doing halojob? after watching you from above",                      
+                                  "SetChoice","3","",
+                                  "CallSceneThenReturn", "HaloJob",
+                                  "GameOver"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "VisitedNoAccessIntroCont",
+                      "theScene": [    
+                                  "IfChoice","3","SecondVisit","SecondOverallNoAccessVisit",
+                                  "normal standard interactions",                      
+                                  "ProgressEqualsOrGreater", "10","GiveAccess",
+                                  "GameOver"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "PrivilegedAccessCont",
+                      "theScene": [    
+                                  "Describe sky scenery then see her. she has normal interactions",                      
+                                  "GameOver"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "GiveAccess",
+                      "theScene": [    
+                                  "gives item to let you freely return to see her",                      
+                                  "GiveItem", "1", "HolyCharm",
+                                  "GameOver"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "TelepathicPhoneSex",
+                      "theScene": [    
+                                  ""
+                                ]
+                    },
+                    {
+                      "NameOfScene": "HaloJob",
+                      "theScene": [    
+                                  ""
+                                ]
+                    },
+                    {
+                      "NameOfScene": "DonationAccessOver",
+                      "theScene": [  
+                                  ""
+                                ]
+                    },
+                    {
+                      "NameOfScene": "ChurchReturn",
+                      "theScene": [  
+                                  "Custom Scene copied then slighly altered for returnning from the SkyCage?"
+                                ]
+                    },
+                    {
+                      "NameOfScene": "Event Broke",
+                      "theScene": [ "Oops, something went wrong! Please contact and ping JLP603 on the MGD discord in order to get this fixed."
+                                ]
+                  }
+                ]
+}
