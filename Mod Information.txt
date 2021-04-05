@@ -12,11 +12,12 @@ Version Changes - Wings Of Love v.0.01
 
 Author Message - Wings Of Love v.0.01                                                                                                                                                                                
 ------------------------------------------------------------------------------------------------
-	The following mod adds an event to the Church. It is still VERY much at it's early stages 
-with no meaningful available content. Go to the Church and donate any amount to have
- a 30% chance to trigger the mod. This mod is still a work in progress and as such you may find 
-some immersion breaking dialogue sentences or bugs. As always I would love to hear any positive 
-or negative feedback on anything! Thank you of trying out my mod!
+	The following mod adds an Angel to the Church which can be accessed by donating any 
+amount of money. However, it currently has a 30% chance to trigger the event that lets you 
+interact with the angel of the mod. It is still VERY much at it's early stages with no meaningful
+available content. This mod is still a work in progress and as such you may find some immersion 
+breaking dialogue sentences or bugs. As always I would love to hear any positive or negative 
+feedback on anything! Thank you of trying out my mod!
 										       
 											- JLP603
 
