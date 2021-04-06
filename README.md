@@ -1,6 +1,6 @@
 # Wings Of Love
 ___
-A Mod that adds an event to the Church are of the game, **[Monster Girl Dreams](https://www.patreon.com/MonsterGirlDreams)** by **Threshold**
+A Mod that adds an event to the Church area of the game, **[Monster Girl Dreams](https://www.patreon.com/MonsterGirlDreams)** by **Threshold**
 
 ## NOTICE:
 ___
